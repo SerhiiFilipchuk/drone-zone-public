@@ -222,9 +222,186 @@ header {
   line-height: 50px;
   background-color: #264699;
   background-image: linear-gradient(208deg, #4964a9 0%, #264699 100%);
+  transition: all .3s;
   
   &:hover {
     background-color: #cb0035;
     background-image: linear-gradient(100deg, #264699 0%, #cb0035 100%);
   }
+}
+
+/* NATURE FROM THE AIR (LARGE DRONE BG) */
+
+.large-drone {
+  height: 690px;
+  background: #ffffff url(../images/large-drone.jpg) no-repeat 100% 50%;
+}
+
+.section-name {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
+  color: #cb0035;
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 120px;
+  background: -webkit-linear-gradient(right, #e17210, #cb0035);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-description {
+  color: #5e6372;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 36px;
+  padding-top: 30px;
+}
+
+.list {
+  padding-top: 55px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.item-number {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #c7cde0;
+  border-radius: 100px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: #3f4e76;
+  font-weight: normal;
+  font-style: normal;
+  margin-right: 32px;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #a7acbc;
+  line-height: 24px;
+}
+
+/* HALF PIC BLOCK LEFT */
+
+.half-pic-block-left {
+  height: 640px;
+  background: url("../images/nature-pic.jpg") no-repeat 0% #f6f6f6;
+  background-size: 50% 100%;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .section-box {
+    width: 45%;
+  }
+
+  .section-description {
+    padding-bottom: 50px;
+  }
+}
+
+/* HALF PIC BLOCK RIGHT */
+
+.half-pic-block-right {
+  height: 640px;
+  background: url("../images/city-view.jpg") no-repeat 100% #f6f6f6;
+  background-size: 50% 100%;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .section-box {
+    width: 45%;
+  }
+
+  .section-description {
+    padding-bottom: 50px;
+  }
+}
+
+/* SIGN UP FORM */
+
+.submit-form {
+  height: 490px;
+  background: url("../images/road.jpg") no-repeat 45% 50%;
+  background-size: cover;
+  text-align: center;
+  
+  h2 {
+    padding-top: 160px;
+    font-size: 48px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 46px;
+  }
+
+  .contact-form-email {
+    display: inline-block;
+    height: 50px;
+    width: 300px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50px;
+    outline: none;
+    background-color: rgba(232, 143, 146, .3);
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    
+    &::placeholder {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+  
+  .contact-form-send {
+    vertical-align: top;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50px;
+    color: #d32721;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    border: none;
+    padding: 0 47px;
+    background: #fff;
+    margin-left: -50px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* MAP */
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
 }
