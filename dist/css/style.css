@@ -298,12 +298,7 @@ a i {
   padding: 14px 0 108px 0;
 }
 
-.musthead-btns {
-  padding-top: 55px;
-  text-align: center;
-}
-
-.musthead-btns .btn {
+.btn {
   display: inline-block;
   height: 50px;
   border-radius: 50px;
@@ -313,6 +308,11 @@ a i {
   font-style: normal;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.musthead-btns {
+  padding-top: 55px;
+  text-align: center;
 }
 
 .musthead-btns .ask-for-price {
@@ -347,4 +347,77 @@ a i {
   font-size: 20px;
   padding-right: 19px;
   vertical-align: middle;
+}
+
+/* DRONE FEATURES */
+
+.main-features {
+  height: 600px;
+  background: #f6f6f6;
+  padding-top: 115px;
+}
+
+.main-features .all-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 104px;
+}
+
+.main-features .feature {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-features img {
+  padding-bottom: 16px;
+}
+
+.main-features .feature-name {
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 19px 0;
+  font-weight: bold;
+  font-style: normal;
+  color: #cb0035;
+  background: -webkit-linear-gradient(right, #e17210, #cb0035);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-features .feature-description {
+  display: inline-block;
+  color: #5e6372;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.features-blue-button {
+  text-align: center;
+}
+
+.ask-for-price-blue {
+  background: linear-gradient(208deg, #4964a9 0%, #264699 100%) #264699;
+  color: #ffffff;
+  padding: 0 54px 0 53px;
+  line-height: 50px;
+}
+
+.ask-for-price-blue:hover {
+  background: linear-gradient(100deg, #264699 0%, #cb0035 100%) #cb0035;
 }
