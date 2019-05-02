@@ -1,0 +1,350 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+div {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?dvyy2x");
+  src: url("../fonts/icomoon.eot?dvyy2x#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dvyy2x") format("truetype"), url("../fonts/icomoon.woff?dvyy2x") format("woff"), url("../fonts/icomoon.svg?dvyy2x#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+  content: "\e900";
+}
+
+body {
+  font-family: 'Proxima Nova';
+  background: greenyellow;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1326px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* HEADER */
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 133px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a i {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.logo-menu {
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-menu a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.logo-menu a:hover {
+  border: 1px solid #ea974f;
+  border-radius: 50px;
+}
+
+/* MUSTHEAD */
+
+.musthead {
+  height: 1080px;
+  background: url(../images/header-picture.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  margin-top: -133px;
+}
+
+.musthead h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+  padding-top: 304px;
+  text-align: center;
+}
+
+.musthead p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 30px;
+  color: #eb7f42;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.musthead img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 383px;
+}
+
+.musthead .scroll-text {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 14px 0 108px 0;
+}
+
+.musthead-btns {
+  padding-top: 55px;
+  text-align: center;
+}
+
+.musthead-btns .btn {
+  display: inline-block;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.musthead-btns .ask-for-price {
+  background: white;
+  color: #d32721;
+  padding: 0 53px 0 54px;
+  vertical-align: top;
+  line-height: 50px;
+  border: 1px solid #ffffff;
+}
+
+.musthead-btns .ask-for-price:hover {
+  background: linear-gradient(100deg, #e17210, #cb0035 100%);
+  color: #ffffff;
+}
+
+.musthead-btns .watch-video {
+  padding: 0 34px 0 29px;
+  border: 1px solid #e57a5c;
+  margin-left: 21px;
+  color: #ffffff;
+  line-height: 48px;
+}
+
+.musthead-btns .watch-video:hover {
+  background: linear-gradient(-100deg, #e17210, #cb0035);
+  border: 1px solid #cb0035;
+  color: #ffffff;
+}
+
+.musthead-btns span {
+  font-size: 20px;
+  padding-right: 19px;
+  vertical-align: middle;
+}
